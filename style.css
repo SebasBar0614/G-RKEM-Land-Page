@@ -1,0 +1,301 @@
+/* PALETA OFICIAL DE COLORES GÖRKEM */
+:root {
+    --bg-primary: #faf6ee;     /* Fondo marfil/crema */
+    --accent-pink: #fce7f3;    /* Rosa pastel */
+    --text-dark: #292524;      /* Oscuro elegante */
+    --text-muted: #78716c;     /* Gris suave */
+    --white: #ffffff;
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 16px;
+}
+
+/* CABECERA */
+.header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.brand-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.brand-tagline {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* CONTENEDOR PRINCIPAL MOBILE-FIRST */
+.main-container {
+    width: 100%;
+    max-width: 480px; /* Tamaño ideal para celulares */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* HEROCARD */
+.hero-card, .section-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.hero-description {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+/* style.css */
+/* CONTENEDOR DE LA IMAGEN */
+.hero-image-wrapper {
+    width: 100%;
+    height: 320px;            /* Altura suficiente para que quepa el logo completo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: transparent; /* Mantiene el fondo limpio */
+}
+
+/* LA IMAGEN DIRECTAMENTE */
+.hero-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;      /* Muestra la imagen COMPLETA sin recortar */
+    border-radius: 20px;       /* <--- AQUÍ REDONDEAMOS LAS ESQUINAS DE LA IMAGEN */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); /* Sombra suave opcional para destacar */
+}
+
+/* BOTONES PRINCIPALES */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: var(--text-dark);
+    color: var(--white);
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: var(--white);
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: var(--white);
+}
+
+.btn-outline {
+    background-color: var(--accent-pink);
+    color: var(--text-dark);
+}
+
+/* UBÍCANOS */
+.section-card h2 {
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+
+.info-group p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 6px 0;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* BUSCADOR */
+.search-box {
+    margin: 16px 0 12px 0;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 50px;
+    border: 1px solid #e7e5e4;
+    background-color: #fafaf9;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-box input:focus {
+    border-color: var(--text-dark);
+    box-shadow: 0 0 0 3px rgba(41, 37, 36, 0.08);
+}
+
+/* FILTROS DE CATEGORÍA */
+.category-filters {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.category-filters::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll en navegadores móbiles */
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border-radius: 50px;
+    border: 1px solid #e7e5e4;
+    background: #ffffff;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+    background: var(--text-dark);
+    color: #ffffff;
+    border-color: var(--text-dark);
+}
+
+/* TARJETAS DE PRODUCTO (LIMPIAS) */
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product-card {
+    display: flex;
+    gap: 14px;
+    text-align: left;
+    border-bottom: 1px solid #f5f5f4;
+    padding-bottom: 14px;
+}
+
+.product-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.product-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #be123c; /* Tono rojizo elegante para destacar el precio */
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.product-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    line-height: 1.35;
+}
+
+.no-results {
+    padding: 30px 10px;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-block;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}

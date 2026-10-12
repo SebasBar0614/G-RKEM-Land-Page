@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - GÖRKEM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="data.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="brand-title">GÖRKEM</h1>
+            <p class="brand-tagline">Nuestra Carta</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Botón para regresar al inicio -->
+        <a href="index.html" class="btn-back">
+            ← Volver al Inicio
+        </a>
+
+        <!-- SECCIÓN DE LA CARTA INTERACTIVA -->
+        <section class="section-card">
+            <!-- Buscador -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar plato o ingrediente...">
+            </div>
+
+            <!-- Filtros por categoría -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="burgers">Burgers</button>
+                <button class="filter-btn" data-category="dogs">Dogs</button>
+                <button class="filter-btn" data-category="fries">Fries</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <!-- Contenedor donde se cargan los productos -->
+            <div id="menuGrid" class="menu-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 GÖRKEM - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
