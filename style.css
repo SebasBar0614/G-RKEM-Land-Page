@@ -258,22 +258,9 @@ main, .main-container, .container, .section-card, .hero-card {
 .section-card {
     text-align: center !important;
 }
-
 .section-card h2 {
-    font-family: var(--font-brand), 'Cinzel', serif !important;
-    font-size: 1.4rem !important;
-    font-weight: 700 !important;
-    letter-spacing: 2px !important;
-    color: var(--texto-terracota-oscuro) !important;
-    margin-bottom: 12px !important;
-    text-transform: uppercase;
-}
-
-.section-card p {
-    font-family: var(--font-subtitles), 'Cormorant Garamond', serif !important;
-    font-size: 1.15rem !important;
-    font-style: italic !important;
-    color: var(--texto-secundario) !important;
-    text-align: center !important;
-    margin-bottom: 6px !important;
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
 }
