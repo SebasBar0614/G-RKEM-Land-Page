@@ -258,9 +258,4 @@ main, .main-container, .container, .section-card, .hero-card {
 .section-card {
     text-align: center !important;
 }
-.section-card h2 {
-    font-family: var(--font-heading);
-    letter-spacing: 2px;
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-}
+
