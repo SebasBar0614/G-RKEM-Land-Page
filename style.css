@@ -36,21 +36,6 @@ body {
     align-items: center;
 }
 
-/* Estilo directo para el texto de bienvenida dentro del main en index.html */
-main p, 
-.hero-card p, 
-.section-card p,
-.hero-desc {
-    font-family: 'Cormorant Garamond', serif !important;
-    font-size: 1.25rem !important;
-    font-style: italic !important;
-    font-weight: 600 !important;
-    color: #6e4e42 !important; /* Tono terroso elegante */
-    text-align: center;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
-}
-
 main, .main-container, .container, .section-card, .hero-card {
     background-color: transparent !important;
     box-shadow: none !important;
